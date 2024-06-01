@@ -1,0 +1,121 @@
+/* Estilo principal para o corpo da página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    background: linear-gradient(to left, silver, #34495e);
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    width: 200px;
+    background: #34495e;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+/* Estilo para o contêiner principal */
+.main-content {
+    margin-left: 220px; /* Espaço para o menu lateral */
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+/* Estilo para os contêineres de formulário */
+.container {
+    background: linear-gradient(to top, #34495e, silver);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Estilo para o título principal */
+h1 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+#h1titulo {
+    color: #16a085;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para os rótulos de texto */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Estilo para os campos de entrada */
+input[type="number"] {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 0;
+}
+
+/* Estilo para os botões de envio */
+input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background: #16a085;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #1abc9c;
+}
+
+/* Estilo para os resultados */
+#resultMinima, #resultMaxima, #resultComparativo, #resultTrisal {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2980b9;
+}
